@@ -5,7 +5,7 @@
 
 const external = "I'm outside the function";
 
-function myFunction() {
+function myFunction() { //1
   console.log(external);
   const internal = "Hello! I'm inside myFunction!";
 
@@ -13,11 +13,12 @@ function myFunction() {
     console.log(internal);
   };
   nestedFunction();
-}
+} //2 
 myFunction();
 
 // Explanation: 
 
+// The nested function is able to access the internal variable because they're still within the same block of code (That block belonging to the main function, where 1 and 2 are marked. )
 
 /* Task 2: Counter */
 
